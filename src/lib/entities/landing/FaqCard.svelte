@@ -1,41 +1,36 @@
 <script lang="ts">
 	// import {  } from '$shared';
-	import { fade } from 'svelte/transition';
-	let { faqItem } = $props();
+	// import {  } from '$widgets';
+	// import {  } from '$entities';
+
+	import { blur, crossfade, draw, fade, fly, scale, slide } from 'svelte/transition';
 
 	let showAnswer = $state(false);
+
+	let { q, a } = $props();
 </script>
 
-<div class="accordion-item" onclick={() => (showAnswer = !showAnswer)}>
-	<div class="accordion-border-heading">
-		<h6 class="accordion-border-title">
-			{faqItem.q}
-		</h6>
-		<img
-			src="/images/white-bold-plus.svg"
-			loading="lazy"
-			alt=""
-			class="{showAnswer
-				? ' rotate-45'
-				: ''}  accordion-border-icon transition delay-150 duration-300 ease-in-out"
-		/>
+<div class="accordion-item---brix tabs-accordion---brix">
+	<div onclick={() => (showAnswer = !showAnswer)} class="faq-question-bar w-inline-block">
+		<div class="question-title">
+			<span class="emoji">⁉️</span>
+			{q}
+		</div>
+		<div class="faq-circle">
+			<img src="images/647c6bd97783a706163e1707_plus.svg" alt="" class="plus-icon" />
+		</div>
 	</div>
+
 	{#if showAnswer}
-		<div transition:fade class="accordion-border-content">
-			{#each faqItem.a as answer}
-				<p class="accordion-border-description">
+		<div transition:fade class="accordion-content---brix">
+			{#each a as answer}
+				<p class="accordion-paragraph---brix">
 					{answer}
 				</p>
 			{/each}
-			<!-- <a href="/" class="button-white w-button">Apply now</a> -->
 		</div>
 	{/if}
 </div>
 
 <style lang="postcss">
-	.menu-button.w--open {
-		background-color: var(--color--border-color);
-		border-radius: var(--border-radius--border-radius);
-		margin-left: auto;
-	}
 </style>

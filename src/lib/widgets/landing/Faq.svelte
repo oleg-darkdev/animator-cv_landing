@@ -1,25 +1,15 @@
 <script lang="ts">
-	import { pmFaq } from '$sharedData';
+	import { faq } from '$sharedData';
+	// import {  } from '$widgets';
+	import { FaqCard } from '$entitiesLanding'
 
-	import { FaqCard } from '$entitiesLanding';
 </script>
 
-<section class="careers-section section-spacing">
-	<div class="w-layout-blockcontainer container-full w-container">
-		<a name="faq"></a>
-		<div class="w-layout-grid grid-career">
-			<div class="career-title-sticky">
-				<div class="section-title">
-					<h2>F.A.Q.</h2>
-				</div>
-			</div>
-			<div class="accordion-border-wrap">
-				{#each pmFaq as faqItem}
-					<FaqCard {faqItem} />
-				{/each}
-			</div>
-		</div>
-	</div>
+<h2 class="clients-title "><span class='emoji'>⁉️</span>  Często pytano mnie o to <span class='emoji'>⁉️</span></h2>
+<section class="faq1">
+	{#each faq as { a, q }}
+		<FaqCard {a} {q}/>
+	{/each}
 </section>
 
 <style lang="postcss">
