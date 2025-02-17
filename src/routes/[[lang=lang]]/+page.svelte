@@ -1,91 +1,48 @@
 <script lang="ts">
-	import { boardgamesList, categories } from '$sharedData';
-	import { LineDivider, SmallContaciDivider } from '$sharedUi';
 	import {
-		About,
-		TagsLine,
+		Hero,
+		ForWhom,
 		Faq,
-		Features,
-		BoardgamesList,
-		OurMission
+		Clients,
+		HowItWork,
+		Gamification,
+		EducationalBoardgames
 	} from '$widgetsLanding';
 	// import { SEO } from '$sharedUtils';
-	// import {
-	// 	LinkinBio,
-	// 	Services,
-	// 	TagsLine,
-	// 	About,
-	// 	Gallery,
-	// 	Stats,
-	// 	Faq,
-	// 	FullWidthBanner,
-	// 	Features,
-	// 	Instructions,
-	// 	PleaseEnterPassword,
-	// 	BestBoardgames,
-	// 	Blog,
-	// 	ColourfulSection,
-	// 	ContactForm,
-	// 	BoardgamesList,
-	// 	Price,
-	// 	Team,
-	// 	FreeFirst,
-	// 	OurMission
-	// } from '$widgetsLanding';
 </script>
 
 <svelte:head>
-	<title>Puzzle Management | Home </title>
+	<title>Oleg Medvedev | Home</title>
 	<meta name="description" content="" />
 </svelte:head>
 
 <!-- <SEO title="Home" /> -->
 
-<TagsLine />
+<Hero />
 
-<About {categories}/>
+<a name="about"></a>
 
-<!-- <Stats /> -->
+<Clients />
 
-<LineDivider />
+<EducationalBoardgames />
 
-<OurMission />
+<a name="progects"></a>
 
-<LineDivider />
+<a name="how"></a>
 
-<Features {categories}/>
+<HowItWork />
 
-<SmallContaciDivider />
+<a name="mission"></a>
 
-<!-- <LineDivider /> -->
+<Gamification />
 
-<BoardgamesList {categories} />
+<a name="whom"></a>
 
-<!-- <ColourfulSection /> -->
-<!-- <BestBoardgames /> -->
-<!-- <Gallery /> -->
-<!-- <BestBoardgames /> -->
-<!-- <Price /> -->
-<!-- <BigContaciDivider /> -->
-<!-- <Services /> -->
-<LineDivider />
+<ForWhom />
+
+<a name="faq"></a>
 
 <Faq />
-
-<!-- <Team /> -->
-
-<!-- <FreeFirst /> -->
-
-<!-- <FullWidthBanner /> -->
-
-<!-- <ContactForm /> -->
-
-<!-- <Instructions /> -->
-
-<!-- <PleaseEnterPassword /> -->
-
-<!-- <LinkinBio /> -->
-
 
 <style lang="postcss">
 </style>
