@@ -1,31 +1,38 @@
 const navigation = [
 	{
-		title: 'O projekcie',
+		text: 'O mnie',
 		link: '#about'
 	},
 	{
-		title: 'Misja',
+		text: 'Lista projektów',
+		link: '#progects'
+	},
+		{
+		text: 'Jak?',
+		link: '#how'
+	},
+	
+	{
+		text: 'Dla kogo?',
+		link: '#whom'
+	},
+
+
+	{
+		text: 'Misja',
 		link: '#mission'
 	},
 	// {
-	// 	title: 'Lorem Ipsum',
+	// 	text: 'Lorem Ipsum',
 	// 	link: '/'
 	// },
 	{
-		title: 'Lista gier',
-		link: '#boardgames'
-	},
-	// {
-	// 	title: 'Lorem Ipsum',
-	// 	link: '/'
-	// },
-	{
-		title: 'F.A.Q.',
+		text: 'F.A.Q.',
 		link: '#faq'
-	},
+	}
 	// {
-	// 	title: 'Lorem Ipsum',
-	// 	link: '/'
+	// 	text: 'Kontakt',
+	// 	link: '#contact'
 	// }
 ];
 
