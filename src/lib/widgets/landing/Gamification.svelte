@@ -27,7 +27,7 @@
 				<div class="industry-title color">Wzrost zaangażowania uczestników</div>
 				<div class="text-block-14">
 					Działania oparte na grze zwiększają zaangażowanie poprzez nagradzanie pracy zespołowej,
-					kreatywności i zabawy 🏆!
+					kreatywności i zabawy! 🏆
 				</div>
 			</div>
 			<div class="benefits-img-wrapper upper">
@@ -43,7 +43,7 @@
 			<div class="benefits-content-wrapper">
 				<div class="industry-title color">Zwiększenie motywacji</div>
 				<div class="text-block-14">
-					Motywowanie uczestników poprzez wspieranie współpracy, nauki i uznania.👏
+					Motywowanie uczestników poprzez wspieranie współpracy, nauki i uznania👏
 				</div>
 			</div>
 			<div class="benefits-img-wrapper second">
@@ -95,4 +95,212 @@
 </section>
 
 <style lang="postcss">
+	.benefits {
+		height: auto;
+		background-color: #000;
+		border-radius: 18px;
+		margin-bottom: 112px;
+		margin-left: 11%;
+		margin-right: 11%;
+		padding: 56px 36px;
+		overflow: hidden;
+	}
+
+	.benefit {
+		width: auto;
+		min-height: 210px;
+		grid-column-gap: 12px;
+		grid-row-gap: 12px;
+		background-color: #ffefc4;
+		border-radius: 12px;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 36px;
+		display: flex;
+		overflow: hidden;
+	}
+
+	.benefit.two {
+		grid-column-gap: 16px;
+		grid-row-gap: 16px;
+		background-color: #ffefc4;
+		align-items: flex-end;
+		padding-top: 36px;
+		padding-bottom: 0;
+	}
+
+	.benefits-1-line {
+		width: 100%;
+		grid-column-gap: 16px;
+		grid-row-gap: 16px;
+		grid-template-rows: auto;
+		grid-template-columns: 1fr 45%;
+		grid-auto-columns: 1fr;
+		align-items: center;
+		margin-top: 0;
+		display: grid;
+	}
+
+	.benefits-img-wrapper {
+		width: 160px;
+		height: 160px;
+		min-width: 160px;
+		background-color: #fff;
+		border-bottom-right-radius: 12px;
+		border-bottom-left-radius: 12px;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-left: 0;
+		display: flex;
+	}
+
+	.benefits-img-wrapper.second {
+		width: 172px;
+		height: 176px;
+		min-width: 172px;
+		border: 2px solid #000;
+		border-bottom-width: 1px;
+		border-radius: 12px 12px 0 0;
+		padding-top: 26px;
+		padding-left: 26px;
+		padding-right: 26px;
+	}
+
+	.benefits-img-wrapper.third {
+		width: 172px;
+		height: 210px;
+		min-width: 172px;
+		border-left: 2px solid #000;
+		border-right: 2px solid #000;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+		padding-top: 42px;
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+
+	.benefits-img-wrapper.upper {
+		height: 176px;
+		min-width: 172px;
+		border-bottom: 2px solid #000;
+		border-left: 2px solid #000;
+		border-right: 2px solid #000;
+		margin-top: -36px;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	.benefits-2-line {
+		width: 100%;
+		grid-column-gap: 16px;
+		grid-row-gap: 16px;
+		grid-template-rows: auto;
+		grid-template-columns: 45% 1fr;
+		grid-auto-columns: 1fr;
+		align-items: center;
+		margin-top: 16px;
+		display: grid;
+	}
+
+	.benefits-content-wrapper {
+		min-height: 180px;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-self: flex-start;
+		align-items: flex-start;
+		padding-right: 0;
+		display: flex;
+	}
+
+	.boost-motivation-img {
+		width: 100%;
+	}
+
+	.employee-engagement-img {
+		width: 96%;
+	}
+
+	.training-img {
+		width: auto;
+		min-width: 100%;
+		overflow: hidden;
+	}
+
+	@media screen and (max-width: 991px) {
+		.benefits {
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+
+		.benefit {
+			grid-column-gap: 24px;
+			grid-row-gap: 24px;
+		}
+
+		.benefits-1-line {
+			grid-column-gap: 8px;
+			grid-row-gap: 8px;
+			grid-template-rows: auto auto;
+			grid-template-columns: 1fr;
+		}
+
+		.benefits-2-line {
+			grid-column-gap: 8px;
+			grid-row-gap: 8px;
+			grid-template-rows: auto auto;
+			grid-template-columns: 1fr;
+			margin-top: 8px;
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		.benefits {
+			margin-bottom: 64px;
+			padding: 36px 24px;
+		}
+
+		.benefit {
+			min-height: 200px;
+			padding-top: 22px;
+		}
+	}
+
+	@media screen and (max-width: 479px) {
+		.benefits-img-wrapper.second {
+			width: 90px;
+			height: 90px;
+			min-width: 90px;
+			border-bottom-width: 2px;
+			border-bottom-right-radius: 12px;
+			border-bottom-left-radius: 12px;
+			margin-left: auto;
+			padding: 2px;
+		}
+
+		.benefits-img-wrapper.third {
+			width: 90px;
+			height: 90px;
+			min-width: 90px;
+			border-top: 2px solid #000;
+			border-bottom: 2px solid #000;
+			border-radius: 12px;
+			padding: 2px;
+		}
+
+		.benefits-img-wrapper.upper {
+			width: 90px;
+			height: 90px;
+			min-width: 90px;
+			border-top: 2px solid #000;
+			border-top-left-radius: 12px;
+			border-top-right-radius: 12px;
+			margin-top: 0;
+		}
+
+		.benefits-content-wrapper {
+			height: auto;
+			grid-column-gap: 6px;
+			grid-row-gap: 6px;
+		}
+	}
 </style>

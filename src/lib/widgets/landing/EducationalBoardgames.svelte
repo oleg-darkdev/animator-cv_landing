@@ -128,7 +128,7 @@
 
 	@media screen and (max-width: 991px) {
 		.quote-collage2-2 {
-			width: 360px;
+			width: 460px;
 			/* height: 424px; */
 			min-height: 400px;
 			padding-top: 24px;
@@ -137,7 +137,7 @@
 		}
 
 		.quote-collage {
-			width: 360px;
+			width: 340px;
 			/* min-height: 380px; */
 		}
 	}
